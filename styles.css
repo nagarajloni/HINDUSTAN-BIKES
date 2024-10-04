@@ -1,0 +1,245 @@
+/* General Reset and Styling */
+body, h1, h2, p, ul, li, a, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Container for all sections */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+  background: #003366;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover, .menu li a.active {
+  background: #00509e;
+  border-radius: 4px;
+}
+
+/* Welcome Section (New) */
+.welcome {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Example vibrant colors */
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px; /* Added padding to account for fixed navbar */
+  margin-top: 60px; /* To prevent overlap with navbar */
+}
+
+.welcome h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.welcome button {
+  background: #fff;
+  color: #ff7e5f;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+.welcome button:hover {
+  background: #ff7e5f;
+  color: #fff;
+}
+
+/* Hero Section (Removed or Repurposed) */
+/* If you decide to remove the original Hero section, ensure to delete or comment it out in HTML */
+
+/* Services Section */
+.services {
+  padding: 60px 0;
+  background: #e9ecef;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services ul li {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.services ul li i {
+  font-size: 40px;
+  color: #00509e;
+  margin-bottom: 15px;
+}
+
+.services ul li:hover i {
+  color: #003366;
+}
+
+/* About Section */
+.about {
+  padding: 60px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Section */
+.contact {
+  padding: 60px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.contact .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.contact input, .contact textarea, .contact select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact button {
+  background: #00509e;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.contact button:hover {
+  background: #003366;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .menu {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .menu li {
+      margin: 10px 0;
+  }
+
+  .services ul {
+      flex-direction: column;
+  }
+
+  .services ul li {
+      width: 90%;
+  }
+}

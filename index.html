@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hindustan Bikes Showroom Landing Page">
+    <title>Hindustan Bikes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">Hindustan Bikes</div>
+            <ul class="menu">
+                <li><a href="#welcome" class="nav-link">Welcome</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Section (New) -->
+    <section id="welcome" class="welcome">
+        <div class="container">
+            <h1>Welcome to Hindustan Bikes</h1>
+            <p>Experience the thrill of the ride with our top-notch bikes and exceptional services.</p>
+            <button onclick="scrollToSection('#services')">Explore Services</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li><i class="fas fa-motorcycle"></i> Bike Sales</li>
+                <li><i class="fas fa-tools"></i> Bike Maintenance</li>
+                <li><i class="fas fa-wrench"></i> Repair Services</li>
+                <li><i class="fas fa-paint-brush"></i> Custom Modifications</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Hindustan Bikes is a premium bike showroom offering a variety of high-performance bikes to suit your needs. With a focus on quality and customer satisfaction, we ensure the best services in bike sales, maintenance, and custom modifications.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:hindustanbikes15@gmail.com">hindustanbikes15@gmail.com</a></p>
+            <p>Phone: <a href="tel:080-648759">080-648759</a></p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Customer Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="bike">Bike Model:</label>
+                    <input type="text" id="bike" name="bike" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="services">Services Interested In:</label>
+                    <select id="services" name="services" required>
+                        <option value="bike-sales">Bike Sales</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="repair">Repair Services</option>
+                        <option value="modifications">Custom Modifications</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: <a href="mailto:hindustanbikes15@gmail.com">hindustanbikes15@gmail.com</a> | Phone: <a href="tel:080-648759">080-648759</a></p>
+        <p>© 2024 Hindustan Bikes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
